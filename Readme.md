@@ -1,5 +1,3 @@
-<img loading="lazy" id="image-5-404" alt="farmácia de manipulação" data-src="https://manipulae.com.br/wp-content/uploads/2023/06/Camada_1-1.svg" class="ct-image lazyloaded" src="https://manipulae.com.br/wp-content/uploads/2023/06/Camada_1-1.svg">
-
 </br>
 <p align="justify">Parabéns por ser selecionado!</p>
 <p align="justify">Esperamos que tenha um ótimo desempenho no teste e venha junto com o time mudar o mercado farmacêutico de Manipulados!</p>
