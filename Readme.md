@@ -1,87 +1,60 @@
-<h1 align="left">
-   ❤️‍🩹 Manipulaê
-</h1>
+<img loading="lazy" id="image-5-404" alt="farmácia de manipulação" data-src="https://manipulae.com.br/wp-content/uploads/2023/06/Camada_1-1.svg" class="ct-image lazyloaded" src="https://manipulae.com.br/wp-content/uploads/2023/06/Camada_1-1.svg">
 
-<p align="justify">Parabéns por ser selecionado!
+</br>
+<p align="justify">Parabéns por ser selecionado!</p>
+<p align="justify">Esperamos que tenha um ótimo desempenho no teste e venha junto com o time mudar o mercado farmacêutico de Manipulados!</p>
 
-Esperamos que tenha um ótimo desempenho no teste e venha junto com o time mudar o mercado farmaceutico de Manipulados!
+## O que esperamos?
 
-## O que esperamos? 🤨
-
-<p align="justify">O objetivo principal deste desafio é avaliar sua capacidade de desenvolver uma solução utilizando ferramentas semelhantes as que usamos aqui na Mani</p>
-<br/>
-<p align="justify">
-  <b>Importante!</b> Este desafio é idêntico ao aplicado para nossos candidatos de nível júnior, 
-  porém neste aqui seremos mais rigorosos em algumas questões técnicas, 
-  fique atento se está implementando o projeto de acordo com os 
-  <b>requisitos e diferenciais listados abaixo. Capriche!</b>
-</p>
+<p align="justify">O objetivo principal deste desafio é avaliar sua capacidade de desenvolver uma solução utilizando ferramentas semelhantes às que usamos aqui na Mani</p>
 <br/>
 
 <b>Requisitos que devem constar no projeto são:</b>
-- ReactJs ou React Native
-- Next Js (Esperamos o máximo de SSR possível)
-- Redux (e middlewares)
-- Styled Components
-- Axios
-- Responsividade
-- Testes Unitários
-- Testes de Integração
-- Documentação Clara
-- Estrutura Limpa
-<br/>
 
-<b>Além dos requisitos citados acima, vamos avaliar os seguintes pontos:</b>
-- Arquitetura
-- Usabilidade
-- Estética
-- Performance
-- Clareza do código
-- Gestão do tempo
-- Commits
-<br/>
+- Utilizar CypressJS
+- Desenvolver 1 Teste E2E da Feature Cotar
+- Desenvolver Teste Manual da Feature Cotar e Análise com Base nas Regras de Negócios Informadas
 
-<b>Diferenciais que podem agradar:</b>
-- Code splitting
-- PWA
-<br/>
+<b>Desafio extra, desejável mas opcional: ⚡</b>
+
+- No Teste E2E da Feature Cotar, ao falhar, enviar screenshot para pasta pública do sharepoint <a href="https://manipulaecombr-my.sharepoint.com/:f:/g/personal/matheus_marinho_manipulae_com_br/Eklx5HErM45OsGgxOLHB3Q0BxZZSzVBzW0FvUKY0EoVajQ?e=XyoPxV">(link da pasta)</a>.
 
 ## Sobre o desafio 🤯
 
-<p align="justify">O Objetivo será implementar um webapp de listagem e pré-visualização de músicas</p>
+<p align="justify">1 - Implementar um teste E2E na página de cotação de receitas do nosso ambiente de testes <a href="https://webmani-test.manipulae.com.br/cotar">(link aqui)</a>.
+</br>
+Não é necessário fazer validação de campos e regras neste teste, a prioridade é o caminho feliz, ou seja, o teste E2E conseguir preencher formulário, enviar uma receita e validar se foi enviada com sucesso.</p>
 
-<p align="justify">Para isso será utilizado a API do Deezer para requisitar os dados necessários, a documentação estará disponível no link a seguir
-<a href="https://developers.deezer.com/api/explorer?url=chart">(https://developers.deezer.com/api/explorer?url=chart)</a></p>
+<p align="justify">2 - Realizar o teste manual da feature do cotar, considerando as seguintes regras:
+</br>
+RN1 - Os seguintes campos são obrigatórios: Receita, CEP, Email, Nome, Celular.
+</br>
+RN2 - O campo nome tem as seguintes validações
+	1 - Obrigatório informar o nome e sobrenome.
+	2 - O nome informado precisa ter no mínimo 3 caracteres e o sobrenome tem que ter no mínimo 2 caracteres.
+	3 - Não é permitido o usuário informar caracteres especiais e números
+</br>
+RN3 - O campo e-mail precisa ser um e-mail válido, ou seja, precisa ter um "@", precisa ter um ou mais caracteres antes e depois do "@", e depois do "@" precisar ter pelo menos um "." com caracteres antes e depois dele também.
+</br>
+RN4 - O CEP deve ser um campo numérico e com 8 dígitos
+</br>
+RN5 - O CEP deve ser um número de CEP válido, ou seja, que possui um endereço nos principais sistemas de buscas (Correios, Google Maps)
+</br>
+RN6 - O Celular deve ser um campo numérico com exatamente 11 dígitos
+</br>
+RN7 - Não é permitido enviar duas vezes a mesma receita
+</p>
 
-\* Obs.: Caso a API não esteja disponível, fique a vontade para procurar outra API de sua preferência ou nos contatar.
+<p align="justify">O projeto deverá ser entregue em forma de repositório público com as instruções para executar o teste E2E e o relatório ou documento que contenha o resultado do teste manual realizado da feature.</p>
 
-<p align="justify">O projeto deverá ser entregue em forma de repositório público com as instruções de instalação e execução.</p>
+## Direcionamento
+
+<b>A Manipulaê em específico no ambiente teste atende o Brasil todo com exceção do Acre, então por exemplo o CEP 69917-740 deve retornar mensagem "Que pena. Ainda não atendemos sua região".</b>
 <br/>
 
-## Direcionamento 😇
-
-<br/>
-<b>A seguir são orientações básicas de oque esperamos que tenha no webapp, 
-contudo, fique a vontade para implementar mais views. O importante é mostrar o que sabe fazer.</b>
-<br/>
-
-  - <b>1º View</b> 
-  - deverá apresentar a lista das principais músicas do momento listadas no Deezer
-  - também deve existir um campo de pesquisa por texto onde podemos pesquisar por álbum, artista, ou título musical.
-  - Quando realizar alguma pesquisa, a listagem inicial deve ser substituída pela listagem referente a pesquisa. (Usar o mesmo componente de listagem)
-  - Os itens da lista devem apresentar:
-    - Os dados da música como (capa do álbum, título, cantor, duração);
-    - Um botão para acessar a musica completa no Deezer;
-    - Um botão de play/pause para escutar a prévia da música;
-    - Um botão para adicionar a música na lista de músicas favoritas;<br/><br/>
-
-   - <b>2º View</b> 
-   - será apresentada a lista com as músicas escolhidas pelo usuário na tela principal. A listagem deve ser semelhante a da tela inicial, porem deve mostrar o botão para remover da lista de favoritos<br/><br/>
-
-
-## Prazo de entrega 🤓
+## Prazo de entrega
 
 O desafio deve ser realizado em 6 dias a partir da data de envio do desafio, o gerenciamento do tempo e também será um fator de análise.
 <b>IMPORTANTE, CASO NÃO CONCLUA A TEMPO, NÃO DEIXE DE ENVIAR O QUE DESENVOLVEU DURANTE OS 6 DIAS!</b>
 
-## Bom código!
+## Boa Sorte!
